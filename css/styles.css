@@ -10,6 +10,7 @@
      --footer-text-color:rgba(255, 255, 255, 0.6);
      --border-header-color:#ECECEC;
      --border-poster-color:#EEEEEE;
+     --background-hang:#C4C4C4;
  }
  /* :root  */
 /* для боді background-color: E5E5E5; */
@@ -165,6 +166,24 @@ p{
  .adress-nav .link:active{
     color: var(--accent-color);  
  }
+ /* overlay */
+ .overlay{
+    background-color: var(--background-hang);
+     background-image: linear-gradient(
+         0deg, rgba(0, 0, 0, 0.2),
+         rgba(47, 48, 58, 0.4)),
+     url('../images/backfon.jpg');
+     max-width: 1600px;
+     max-height: 600px;
+     margin-left: auto;
+     margin-right: auto;
+     background-position: center;
+     background-size:cover ;
+     background-repeat: no-repeat;
+    
+
+
+ }
  /* hero section */
 .hero{
     text-align: center; 
@@ -218,6 +237,7 @@ p{
 .features{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .features .item{
@@ -235,6 +255,30 @@ p{
     clip: rect(0000);
     overflow: hidden;
 
+}
+
+.features .item::before{
+    display: block;
+    content:'';
+    height: 120px;
+    
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    margin-bottom: 30px;
+    background-color:#F5F4FA
+}
+.icon-antenna::before{
+    background-image: url('../images/logo-1.svg');
+}
+.icon-clock::before{
+    background-image: url('../images/logo-2.svg');
+}
+.icon-diagram::before{
+    background-image: url('../images/logo-3.svg');
+}
+.icon-astronaut::before{
+    background-image: url('../images/logo-4.svg');
 }
 .features .title{
  color: var( --title-text-color);
