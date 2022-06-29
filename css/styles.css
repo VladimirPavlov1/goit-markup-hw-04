@@ -346,6 +346,40 @@ p{
     letter-spacing: .03em;
    
 }
+.social-links{
+    padding: 0 32px;
+}
+.list-items-icon{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: o;
+    padding-inline-start: 0;
+    justify-content: space-between;
+}
+.icon-item{
+     width: 44px;
+    height: 44px;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    background-color: var(--button-text-color);
+}
+.icon-item:hover{
+    background-color:var(--accent-color);
+}
+.icon{  
+    padding: 10px;
+
+    display: block;
+    fill:#AFB1B8;
+}
+.icon:hover{
+    fill: var(--button-text-color);
+}
 .button-nav{
     display: flex;
     justify-content: center;
