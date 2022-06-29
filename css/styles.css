@@ -137,15 +137,19 @@ p{
  .address-nav{
      display: flex;
      margin-left: auto;
+     align-items: flex-end;
  }
- 
+ .address-nav .item{
+     display: block;
+
+ }
  .address-nav .item+.item{
      margin-left: 50px;
  }
  .address-nav .link{
 
-     padding-top: 32px;
-     padding-bottom: 32px;
+     /* padding-top: 32px;
+     padding-bottom: 32px; */
 
      color: var(--paragraph-text-color); 
      
@@ -158,13 +162,22 @@ p{
      text-decoration: none;
      letter-spacing: .02em;
  }
- .adress-nav .link:hover,
- .adress-nav .link:focus{
+ .address-nav .link:hover,
+ .address-nav .link:focus{
      color: var(--accent-color);
-     border: 2px solid var(--accent-color);    
+     
  }
  .adress-nav .link:active{
     color: var(--accent-color);  
+ }
+ .icon-envelope{
+     fill:var(--paragraph-text-color);
+     display: inline-block;
+     margin-bottom: -5px;
+ }
+ .icon-envelope:hover{
+     fill: var(--accent-color);
+
  }
  /* overlay */
  .overlay{
