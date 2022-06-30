@@ -11,6 +11,7 @@
      --border-header-color:#ECECEC;
      --border-poster-color:#EEEEEE;
      --background-hang:#C4C4C4;
+     --color-icon:#AFB1B8;
  }
  /* :root  */
 /* для боді background-color: E5E5E5; */
@@ -62,6 +63,7 @@ p{
     width: 1200px;
     padding:0 15px;
     margin: 0 auto;
+    text-align: center;
 }
 .section{
     padding: 94px 0;
@@ -175,7 +177,7 @@ p{
      display: inline-block;
      margin-bottom: -5px;
  }
- .icon-envelope:hover{
+ .address-nav .link:hover .icon-envelope {
      fill: var(--accent-color);
 
  }
@@ -337,8 +339,13 @@ p{
 .team{
     display: flex;
 }
+.team .item{
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .team .item:not(:last-child){
     margin-right: 30px;
+    
 }
 .item-inner{
     text-align: center;
@@ -360,7 +367,7 @@ p{
    
 }
 .social-links{
-    padding: 0 32px;
+    padding: 0 32px 30px;
 }
 .list-items-icon{
     display: flex;
@@ -425,10 +432,12 @@ p{
 .button:focus{
     color: var(--button-text-color);
     background-color:var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button:active{
     color: var(--button-text-color);
     background-color:var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* .button .primary{
@@ -441,11 +450,62 @@ p{
     background-color: var(--button-secondary-color);
 } */
     
+/* our clients */
+.our-clients-title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+}
+.our-clients-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-clients-item{
+    display: block;
+    width: 170px;
+    height: 92px;
+    align-content: center;
+    border: 1px solid #AFB1B8;
+   
+}
+.client-icon{
+    display: block;
+    width: 106px;
+    height: 60px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    fill: var(--color-icon);
     
+}
+.client-icon:hover{
+    fill:var(--accent-color)
+}
+.our-clients-item:hover{
+    border: 1px solid var(--accent-color);
+}
 /* footer */
+.footer-box{
+    text-align: start;
+}
 .footer-items{
      background-color: var(--hero-section-color); 
      padding: 60px 0;
+     max-width: 1600px;
+     margin-left: auto;
+     margin-right: auto;
+     background-position: center;
 }
 .footer-items .logo{
      display: block;
@@ -486,29 +546,74 @@ p{
      text-decoration: none;
      font-style: normal;
 }
+.social-title{
+    font-family: 'Roboto', sans-serif;
+    font-style: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0,03em;
+    text-transform: uppercase;
+    color:var(--button-text-color);
+    padding-bottom: 20px;
+    margin:0;
 
+}
+.flex{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
 
 .footer-nav .item:not(:last-child){
     margin-bottom: 10px;
 }
+.footer-items-icon{
+    max-width: 206px;
+    display:flex;
+    margin: 0;
+    padding: 0;
+    gap:10px;
+    
+}
+.footer-icon-item{
+     width: 44px;
+    height: 44px;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icon-item:hover{
+    background-color:var(--accent-color);
+}
+.footer-icon{  
+    padding: 10px;
 
-
-/* .footer-nav .link:hover,
-.footer-nav .link:focus{
-     color: var(--button-text-color); */
-/* projects */
-
+    display: block;
+    fill:#ffffff;
+}
+.footer-icon:hover{
+    fill: var(--button-text-color);
+}
 
 
 .work-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .work-list .item{
     width: 370px;
     margin-bottom: 30px;
     margin-right: 30px;
     
+}
+.work-list .item:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .work-list .item:nth-child(3n){
     margin-right: 0;
