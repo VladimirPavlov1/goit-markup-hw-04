@@ -379,14 +379,14 @@ p{
 }
 .icon-item{
      width: 44px;
-    height: 44px;
-    list-style-type: none;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin: 0;
-    border-radius: 50%;
-    background-color: var(--button-text-color);
+     height: 44px;
+     list-style-type: none;
+     text-align: center;
+     text-decoration: none;
+     display: block;
+     margin: 0;
+     border-radius: 50%;
+     background-color: var(--button-text-color);
 }
 .icon-item:hover{
     background-color:var(--accent-color);
